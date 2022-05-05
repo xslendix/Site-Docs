@@ -14,7 +14,7 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'templeos-simplified', // Usually your GitHub org/user name.
-  projectName: 'templeos-site', // Usually your repo name.
+  projectName: 'Site-Docs', // Usually your repo name.
   deploymentBranch: "gh-pages",
 
   presets: [

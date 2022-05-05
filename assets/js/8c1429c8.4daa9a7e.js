@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksite_docs=self.webpackChunksite_docs||[]).push([[782],{3287:function(e){e.exports=JSON.parse('{"permalink":"/blog/tags/templeos","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

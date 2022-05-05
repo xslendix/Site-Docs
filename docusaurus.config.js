@@ -25,13 +25,13 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/TempleOS-Simplified/Site-Docs/tree/main/',
         },
         blog: {
-          showReadingTime: true,
+          showReadingTime: false,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/TempleOS-Simplified/Site-Docs/tree/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -47,7 +47,7 @@ const config = {
         title: 'TempleOS Simplified',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/HolyC_Logo.svg',
         },
         items: [
           {
@@ -58,7 +58,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/templeos-simplified/site-docs',
             label: 'GitHub',
             position: 'right',
           },
@@ -77,37 +77,37 @@ const config = {
             ],
           },
           {
-            title: 'Community',
+            title: 'Socials',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://discord.gg/pBKzvgKkTh',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://twitter.com/templeosenjoyer',
               },
             ],
           },
           {
-            title: 'More',
+            title: 'Maintainers',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Xzntrc',
+                href: 'https://hydr.in/56yg',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'Steven Laczko',
+                href: 'https://github.com/StevenLaczko/'
               },
+              {
+                label: 'Contributors',
+                href: 'https://github.com/TempleOS-Simplified/Site-Docs/graphs/contributors'
+              }
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: "TempleOS Simplified, Inc. Creative Commons Attribution 4.0 International License.",
       },
       prism: {
         theme: lightCodeTheme,

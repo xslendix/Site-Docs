@@ -4,32 +4,29 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Learn TempleOS Easily',
+    Svg: require('@site/static/img/HolyC_Logo.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Focus on what's important, get the fundamentals down, and start learning towards HolyC!
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Explore Endless Possibilities',
+    Svg: require('@site/static/img/elephant.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Explore all the cool features that await in TempleOS. Over all, proving to be a valuable learning experience.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Open Source',
+    Svg: require('@site/static/img/terry.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        This site is open-source; written by enthusiasts for enthusiasts. Want to suggest a change? head to our <a href="https://github.com/templeos-simplified/site-docs">GitHub</a> repository.
       </>
     ),
   },
@@ -62,3 +59,4 @@ export default function HomepageFeatures() {
     </section>
   );
 }
+

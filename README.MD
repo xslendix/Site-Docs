@@ -48,3 +48,8 @@ Images and resources should be added to `static/` which is built directly to `/`
     ├── logo_upscaled.jpg
     └── terry.svg
 ```
+
+### Contributors
+<a href="https://github.com/templeos-simplified/site-docs/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=templeos-simplified/site-docs" />
+</a>

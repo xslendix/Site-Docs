@@ -9,10 +9,10 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <header className={clsx('hero', styles.heroBanner)}>
       <div className="container">
+        <img src="https://media.discordapp.net/attachments/965800987870769152/982605253381861416/Logo128x152.jpg"></img>
         <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
@@ -29,8 +29,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Welcome to TempleOS Simplified; learn everything about TempleOS from it's core, functions, and programming.">
+      title={`TempleOS Simplified`}
+      description="Learn the beuaty of TempleOS">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

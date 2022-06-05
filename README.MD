@@ -14,8 +14,7 @@
 ### Contributing
 
 > **Note**
-
-> A basic understanding of [React](https://reactjs.org/) and [Markdown](https://https://www.markdownguide.org/) may be nesseciary for editing features of TempleOS Simplified.
+ A basic understanding of [React](https://reactjs.org/) and [Markdown](https://https://www.markdownguide.org/) may be nesseciary for editing features of TempleOS Simplified.
 
 Upon pushing to the main branch, the site will be automatically built to the [gh-pages](https://github.com/TempleOS-Simplified/Site-Docs/tree/gh-pages) (Does not require any manual updates; all work is done on the main branch) and deployed to GitHub pages. Understanding the file structure is important to contributing to the site; it may be worth checking out the [Docsuaurs Documentation](https://docusaurus.io/docs).
 

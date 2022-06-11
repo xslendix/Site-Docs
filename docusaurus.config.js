@@ -63,6 +63,13 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
+          {
+            to: '/resources',
+            label: 'Resources',
+            position: 'left',
+            activeBaseRegex: `/resources/`,
+          },
+          
         ],
       },
       footer: {

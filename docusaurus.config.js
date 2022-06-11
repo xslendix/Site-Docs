@@ -16,6 +16,7 @@ const config = {
   organizationName: 'templeos-simplified', // Usually your GitHub org/user name.
   projectName: 'Site-Docs', // Usually your repo name.
   deploymentBranch: "gh-pages",
+  
 
   presets: [
     [
@@ -40,7 +41,7 @@ const config = {
     ],
   ],
 
-  themeConfig:
+  themeConfig: 
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
@@ -113,6 +114,11 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: false,
+        respectPrefersColorScheme: false,
+      }
     }),
 };
 

@@ -1,132 +1,193 @@
-// @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
-
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
-
-/** @type {import('@docusaurus/types').Config} */
-const config = {
-  title: 'TempleOS Simplified',
-  tagline: 'TempleOS made easy.',
-  url: 'https://github.com',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'templeos-simplified', // Usually your GitHub org/user name.
-  projectName: 'Site-Docs', // Usually your repo name.
+/** @type {import('@docusaurus/types').DocusaurusConfig} */
+module.exports = {
+  title: "TempleOS Simplified",
+  tagline: "Providing simple TempleOS documentation.",
+  url: "https://templeos.me",
+  baseUrl: "/",
+  trailingSlash: false,
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "logos/HolyC.png",
+  organizationName: "TempleOS-Simplified",
+  projectName: "TempleDocs",
   deploymentBranch: "gh-pages",
-  
+
+  // ADDED BY XZNTRC, DO NOT REMOVE. FOR EASIER ACCESSS
+  customFields: {
+    DiscordURL: "https://discord.gg/Epu3WxjaP7",
+    GitHubURL: "https://github.com/templeos-simplified/site-docs",
+  },
+
+
+
+
+  themeConfig: {
+    colorMode: {
+      respectPrefersColorScheme: true,
+    },
+    navbar: {
+      title: "TempleDocs",
+      logo: {
+        alt: "HolyC Logo",
+        src: "logos/HolyC.png",
+      },
+      
+      items: [
+
+
+
+        {
+          to: "guide/intro",
+          label: "Guide",
+          position: "left",
+          sidebarId: 'guide'
+        },
+
+        {
+          to: "holyc/intro",
+          label: "HolyC",
+          position: "left",
+          sidebarId: 'holyc'
+        },
+
+        {
+          to: "Keybinding",
+          label: "Keybinding",
+          position: "left",
+          sidebarId: 'config'
+        },
+
+        
+
+        {
+          href: "https://github.com/templeos-simplified/site-docs",
+          position: "right",
+          
+        },
+
+        {
+          href: "https://discord.gg/Epu3WxjaP7",
+          position: "right",
+        },
+
+      ],
+    },
+
+    footer: {
+      style:            'dark',
+      links: [
+    
+        //  right
+        {
+          title:        'Development',
+
+          items: [
+
+            {
+              label:    'GitHub',
+              href:     "https://www.github.com/templeos-simplified/site-docs",
+              position: "right",
+            },
+
+            {
+              label:    'Contributors',
+              href:     "https://github.com/TempleOS-Simplified/Site-Docs/graphs/contributors",
+              position: "right",
+            }
+
+          ],
+        
+
+        },
+
+        // center
+
+        {
+
+          title:        'Contact',
+
+          items: [
+
+            {
+              label:    'Twitter',
+              href:     "https://twitter.com/templeosenjoyer",
+              position: "center",
+            },
+
+
+            {
+              label:    'Email (Prefered)',
+              href:     "mailto:xzntrc@fedora.email",
+              position: "center",
+            },
+            
+          ],
+        },
+      
+        // left
+
+        {
+
+          title:        'Donate',
+
+
+          items: [
+
+            {
+              label:    'National Alliance on Mental Health (US)',
+              href:     "https://donate.nami.org/give/197406/#!/donation/checkout?utm_source=globalNav&utm_medium=website&utm_campaign=DonationTracking&c_src=WEBDGe",
+              position: "center",
+            },
+
+
+            {
+              label:    'SANE (UK)',
+              href:     "https://www.sane.org.uk",
+              position: "center",
+            },
+
+
+            {
+              label:    'SANE (AU)',
+              href:     "https://www.sane.org/",
+              position: "center",
+            },
+
+          ],
+        
+        
+        },
+
+
+      ],
+
+
+      copyright: `Creative Commons Attribution 4.0 International © ${new Date().getFullYear()} | Xzntrc`,
+
+
+    },
+
+    prism: {
+      
+    },
+
+  },
 
   presets: [
     [
-      'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      "@docusaurus/preset-classic",
+      {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl: 'https://github.com/TempleOS-Simplified/Site-Docs/tree/main/',
-        },
-        blog: {
-          showReadingTime: false,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/TempleOS-Simplified/Site-Docs/tree/main/',
+          routeBasePath: "/",
+          sidebarPath: require.resolve("./sidebars.js"),
+          sidebarCollapsible: true,
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/style.css"),
         },
-      }),
+      },
     ],
   ],
 
-  themeConfig: 
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      navbar: {
-        title: 'TempleOS Simplified',
-        logo: {
-          alt: 'My Site Logo',
-          src: 'img/HolyC_Logo.svg',
-        },
-        items: [
-          {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Tutorial',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/templeos-simplified/site-docs',
-            label: 'GitHub',
-            position: 'right',
-          },
-          {
-            to: '/resources',
-            label: 'Resources',
-            position: 'left',
-            activeBaseRegex: `/resources/`,
-          },
-          
-        ],
-      },
-      footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Socials',
-            items: [
-              {
-                label: 'Discord',
-                href: 'https://discord.gg/pBKzvgKkTh',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/templeosenjoyer',
-              },
-            ],
-          },
-          {
-            title: 'Maintainers',
-            items: [
-              {
-                label: 'Xzntrc',
-                href: 'https://hydr.in/56yg',
-              },
-              {
-                label: 'Steven Laczko',
-                href: 'https://github.com/StevenLaczko/'
-              },
-              {
-                label: 'Contributors',
-                href: 'https://github.com/TempleOS-Simplified/Site-Docs/graphs/contributors'
-              }
-            ],
-          },
-        ],
-        copyright: "TempleOS Simplified, Inc. Creative Commons Attribution 4.0 International License.",
-      },
-      prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-      },
-      colorMode: {
-        defaultMode: 'dark',
-        disableSwitch: false,
-        respectPrefersColorScheme: false,
-      }
-    }),
+  
 };
-
-module.exports = config;

@@ -15,7 +15,7 @@ function BannerText() {
 
       <div className="bannerBtns">
         <Link
-          to="CHANGEEEEEEEEEEE"
+          to="/docs/guide/intro"
           style={{ textDecoration: "none" }}
           >
           
@@ -36,14 +36,7 @@ function Banner() {
   return (
     <div className="banner">
       <BannerText />
-      {/* 
-      <img
-        className="bannerImg"
-        src="img/TempleOS_Sreenshot.png"
-        alt="Exodia Demo"
-      />
-      */}
-      
+
       
     </div>
   );

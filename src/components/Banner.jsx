@@ -15,7 +15,7 @@ function BannerText() {
 
       <div className="bannerBtns">
         <Link
-          to="/docs/guide/intro"
+          to="/guide/intro"
           style={{ textDecoration: "none" }}
           >
           

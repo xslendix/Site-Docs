@@ -111,7 +111,17 @@ img {
 }
 
 
-
 .bannerImg{
   width: 100px;
 }
+
+/* DOC SPECIFIC : NEED TO USE !IMPORTANT */
+.doc-left{
+  display:block !important;
+  text-align:left !important;
+}
+
+.doc-left img{
+  width: 300px !important;
+}
+

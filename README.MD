@@ -1,5 +1,5 @@
 <h1 align="center">
-<a href="https://templeos.me"><img src="https://templeos.me/img/logo_upscaled.jpg" alt="The Temple Operating System" width="150"></a>
+<a href="https://templeos.me"><img src="https://templeos.me/logos/TempleOS.jpg" alt="The Temple Operating System" width="150"></a>
 
 <p align="center">⚔️ TempleOS Simplified 📖</p>
 </h1>

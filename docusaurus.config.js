@@ -12,6 +12,8 @@ module.exports = {
   projectName: "TempleDocs",
   deploymentBranch: "gh-pages",
 
+  onBrokenLinks: "warn",
+
   // ADDED BY XZNTRC, DO NOT REMOVE. FOR EASIER ACCESSS
   customFields: {
     DiscordURL: "https://discord.gg/Epu3WxjaP7",

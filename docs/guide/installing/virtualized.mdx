@@ -1,0 +1,43 @@
+---
+id: virtualized
+title: 👾 Virtualized
+sidebar_position: 1
+---
+
+# Virtualized
+*This page is for installing TempleOS on a virtual machine. If you wish to install on Bare Metal; skip this page.* 
+
+Virtual machines provide a substitute for a real machine (in contrast to bare metal). Virtual machines are based on  computer architectures and provide functionality of a physical computer. Installing a virtual machine is a relatively simple process.
+
+First you'll need to select which virtual machine software suits you, each one has their own quirks, which will be touched on breifly.
+* [VMWare Player](https://www.vmware.com/au/products/workstation-player.html): Free/Paid, Audio Support, GUI, Win/Linux
+* [Oracle VirtualBox](https://www.virtualbox.org/): Free, Open Source, GUI, Mac(Intel-only)/Win/Linux
+* [QEMU](https://www.google.com/search?client=firefox-b-d&q=QEMU): Free, Open Source, Audio Support, CLI, Mac/Win/Linux/Other(Unix)
+
+Next you'll need to acquire the TempleOS ISO from [here](https://templeos.org/Downloads/TempleOS.ISO), Or curl it:
+```sh
+curl https://templeos.org/Downloads/TempleOS.ISO -o templeos.iso
+```
+
+From this point forward, the steps required for an install depends on the VM software you have selected. Below you can find the sections corresponding to the respective software.
+
+# VMWare Workstation
+<ol>
+    <li>Upon launching VMWare Player, select Create a new virtual machine and select "Typical".</li>
+    <li>Select the "Use ISO Image" option then "Browse" and open the TempleOS.ISO that you downloaded.</li>
+    <li>On the next menu; select "3. Other", then make sure to edit the version and set it to "Other 64-bit".</li>
+    <li>Now you can enter the name for your VM and an install location.</li>
+    <li>Select the HDD space; a couple of GBs is fine, now select how you want your disks setup.</li>
+    <li>Finally you'll be greeted with a review of your Virtual Machine. Before finishing, press customize Hardware and increase your RAM to a minimum of 512MB or a recommended 2GBs. While you're here you can increase your cores.</li>
+    
+</ol>
+
+Now it's time to actually boot into TempleOS. Once booted, you'll be granted with a dialogue. Press "Y" to the first option, and "Y" again for the latter. TempleOS will now be installing on the virtual disk. Once finished, you'll be prompted with two additional dialogues, simply press "N" for both. To exit VMWare you'll need to press <kbd>Ctrl</kbd>+<kbd>Alt</kbd> to unlock your mouse, and exit the virtual machine. Once you've exited the virtual machine:
+<ol>
+    <li>Re-open VMWare Workstation if it was closed, reselect the virtual machine and press "edit virtual machine settings" at the bottom.</li>
+    <li>Select "CD/DVD" and change it to "use a physical drive".</li>
+    <li>Start the virtual machine, if granted with a warning message, just select "No".</li>
+
+</ol>
+
+Congratulations, you've just installed TempleOS in VMWare Workstation.
